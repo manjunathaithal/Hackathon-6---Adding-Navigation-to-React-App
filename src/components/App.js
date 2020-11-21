@@ -3,7 +3,7 @@ import "../styles/App.css";
 import Home from "./Home";
 import About from "./About";
 import WPath from "./NoPath";
-import UsePathname from "./LocationDisplay";
+import LocationDisplay from "./LocationDisplay";
 
 import {
   BrowserRouter,
@@ -31,7 +31,7 @@ class App extends Component {
             </li>
           </ul>
 
-          <UsePathname data-testid="location-display" />
+          <LocationDisplay data-testid="location-display" />
 
           <Switch>
             <Route exact path="/" component={Home}></Route>
