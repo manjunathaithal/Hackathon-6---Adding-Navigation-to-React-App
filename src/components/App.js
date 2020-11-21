@@ -30,9 +30,9 @@ class App extends Component {
               <Link to="/about">About Us</Link>
             </li>
           </ul>
-          <h1 data-testid="location-display">
-            <UsePathname />
-          </h1>
+
+          <UsePathname data-testid="location-display" />
+
           <Switch>
             <Route exact path="/" component={Home}></Route>
             <Route exact path="/about" component={About}></Route>
