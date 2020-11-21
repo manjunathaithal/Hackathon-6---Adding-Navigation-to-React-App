@@ -33,8 +33,9 @@ class App extends Component {
               <Link to="*">NO Path</Link>
             </li>
           </ul>
-
-          <LocationDisplay data-testid="location-display" />
+          <span data-testid="location-display">
+            <LocationDisplay />
+          </span>
 
           <Switch>
             <Route exact path="/" component={Home}></Route>
