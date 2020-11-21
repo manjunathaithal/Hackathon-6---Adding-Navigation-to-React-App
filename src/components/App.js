@@ -29,6 +29,9 @@ class App extends Component {
             <li>
               <Link to="/about">About Us</Link>
             </li>
+            <li>
+              <Link to="*">NO Path</Link>
+            </li>
           </ul>
 
           <LocationDisplay data-testid="location-display" />
