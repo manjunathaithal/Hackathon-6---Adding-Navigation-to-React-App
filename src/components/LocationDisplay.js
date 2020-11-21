@@ -14,8 +14,8 @@ import { useLocation } from "react-router-dom";
 
 // custom hook to get the current pathname in React
 
-const usePathname = () => {
+const LocationDisplay = () => {
   const location = useLocation();
   return location.pathname;
 };
-export default usePathname;
+export default LocationDisplay;
