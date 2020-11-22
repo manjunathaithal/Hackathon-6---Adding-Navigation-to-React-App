@@ -33,7 +33,9 @@ class App extends Component {
           </li>
         </ul>
 
-        <LocationDisplay data-testid="location-display" />
+        <span data-testid="location-display">
+          <LocationDisplay />
+        </span>
 
         <Switch>
           <Route exact path="/" component={Home}></Route>
