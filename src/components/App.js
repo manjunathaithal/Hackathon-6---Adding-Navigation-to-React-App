@@ -48,3 +48,4 @@ class App extends Component {
 }
 
 export default App;
+export { Home, About, WPath, LocationDisplay };
