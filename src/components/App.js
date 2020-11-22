@@ -20,29 +20,27 @@ class App extends Component {
 
   render() {
     return (
-      <BrowserRouter>
-        <div id="main">
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About Us</Link>
-            </li>
-            <li>
-              <Link to="*">NO Path</Link>
-            </li>
-          </ul>
+      <div id="main">
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About Us</Link>
+          </li>
+          <li>
+            <Link to="*">NO Path</Link>
+          </li>
+        </ul>
 
-          <LocationDisplay data-testid="location-display" />
+        <LocationDisplay data-testid="location-display" />
 
-          <Switch>
-            <Route exact path="/" component={Home}></Route>
-            <Route exact path="/about" component={About}></Route>
-            <Route component={WPath}></Route>
-          </Switch>
-        </div>
-      </BrowserRouter>
+        <Switch>
+          <Route exact path="/" component={Home}></Route>
+          <Route exact path="/about" component={About}></Route>
+          <Route component={WPath}></Route>
+        </Switch>
+      </div>
     );
   }
 }
