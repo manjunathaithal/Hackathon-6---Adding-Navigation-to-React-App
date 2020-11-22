@@ -20,8 +20,8 @@ class App extends Component {
 
   render() {
     return (
-      <div id="main">
-        <BrowserRouter>
+      <BrowserRouter>
+        <div id="main">
           <ul>
             <li>
               <Link to="/">Home</Link>
@@ -41,8 +41,8 @@ class App extends Component {
             <Route exact path="/about" component={About}></Route>
             <Route component={WPath}></Route>
           </Switch>
-        </BrowserRouter>
-      </div>
+        </div>
+      </BrowserRouter>
     );
   }
 }
